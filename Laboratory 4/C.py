@@ -3,5 +3,5 @@ def reverse(strs):
        return ' '
    else:
        return reverse(strs[1:])+strs[0]
-strs="123456789"
+strs="abcede"
 print(reverse(strs))
