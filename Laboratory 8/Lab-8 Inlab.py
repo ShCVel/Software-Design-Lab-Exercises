@@ -1,12 +1,68 @@
-tax_rate = 0.25
-standard_deduc = 12400.0
-dependent_deduc = 1100.0
+"""
+Program: taxform.py
+Author: Ken Lambert
+ReDesigned by: Pateño Rhine
+- Based on Philippine Rate in the present time.
+Compute a person’s income tax.
+1. Significant constants
+ tax rate
+ standard deduction
+ deduction per dependent
+2. The inputs are
+ gross income
+ number of dependents
+3. Computations:
+ taxable income = gross income - the standard
+ deduction - a deduction for each dependent
+ income tax = is a fixed percentage of the taxable income
+4. The outputs are
+ the income tax
+"""
+
+# Initialize the constants
+TAX_RATE = 0.25
+STANDARD_DEDUCTION = 12400.0
+DEPENDENT_DEDUCTION = 1100.0
 # Request the inputs
-grossinc = float(input("Enter the gross income: "))
-numdep = int(input("Enter the number of dependents: "))
+grossIncome = float(input("Enter the gross income: "))
+numDependents = int(input("Enter the number of dependents: "))
 # Compute the income tax
-taxableinc = grossinc - standard_deduc - \
-dependent_deduc* numdep
-inctax = taxableinc * tax_rate
+taxableIncome = grossIncome - STANDARD_DEDUCTION - \
+ DEPENDENT_DEDUCTION * numDependents
+incomeTax = taxableIncome * TAX_RATE
 # Display the income tax
-print("The income tax is $" + str(inctax))
+print("The income tax is $" + str(incomeTax))
+"""
+Program: taxform.py
+Author: Ken Lambert
+ReDesigned by: Pateño Rhine
+- Based on Philippine Rate in the present time.
+Compute a person’s income tax.
+1. Significant constants
+ tax rate
+ standard deduction
+ deduction per dependent
+2. The inputs are
+ gross income
+ number of dependents
+3. Computations:
+ taxable income = gross income - the standard 
+ deduction - a deduction for each dependent
+ income tax = is a fixed percentage of the taxable income
+4. The outputs are
+ the income tax
+"""
+
+# Initialize the constants
+TAX_RATE = 0.25
+STANDARD_DEDUCTION = 12400.0
+DEPENDENT_DEDUCTION = 1100.0
+# Request the inputs
+grossIncome = float(input("Enter the gross income: "))
+numDependents = int(input("Enter the number of dependents: "))
+# Compute the income tax
+taxableIncome = grossIncome - STANDARD_DEDUCTION - \
+ DEPENDENT_DEDUCTION * numDependents
+incomeTax = taxableIncome * TAX_RATE
+# Display the income tax
+print("The income tax is $" + str(incomeTax))
