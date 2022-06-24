@@ -1,7 +1,7 @@
 """
 Program: taxform.py
 Author: Ken Lambert
-ReDesigned by: Pateño Rhine
+ReDesigned by: Shulamite Velasco
 - Based on Philippine Rate in the present time.
 Compute a person’s income tax.
 1. Significant constants
